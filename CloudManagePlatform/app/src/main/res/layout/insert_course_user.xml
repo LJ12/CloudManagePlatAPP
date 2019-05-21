@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBule"
+        android:gravity="center"
+        android:text="录入课程"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+
+        />
+
+    <LinearLayout
+        android:layout_width="240dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="60dp"
+            android:inputType="number"
+            android:text="课程ID："
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/ET_ICU_1"
+            android:textColor="@color/colorBlack"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:inputType="number"
+            android:text=""
+            android:textSize="12dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="40dp"
+            android:text="课程名："
+            android:textColor="@color/colorBlack"
+            android:textSize="17dp" />
+
+        <EditText
+            android:id="@+id/ET_MIU_2"
+            android:layout_width="200dp"
+            android:layout_height="35dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorBlack"
+            android:text=""
+            android:textSize="12dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="130dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/B_MICM_1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:background="@color/colorBule"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/B_MICM_2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="40dp"
+                android:background="@color/colorBule"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

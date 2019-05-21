@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/colorBule"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/IV_LUM_2"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/mo_scanner_back_img" />
+
+            <TextView
+                android:id="@+id/TV_LUM_3"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="查看用户信息"
+                android:textColor="@color/colorBlack"
+                android:textSize="18dp"
+
+                />
+        </LinearLayout>
+        <!-- TabHost的标签 -->
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="35dp"></TabWidget>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorHighWhite" />
+        <!-- TabHost的内容 -->
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!-- 第一个标签要显示的内容 -->
+            <LinearLayout
+                android:id="@+id/LL_LUM_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="60dp"
+                        android:gravity="center"
+                        android:text="用户ID"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="center"
+                        android:text="用户名"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="13dp" />
+                </LinearLayout>
+
+                <ListView
+                    android:id="@+id/LV_LUM_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="380dp"
+                    android:scrollbars="vertical" />
+                <Button
+                    android:id="@+id/B_LUM_1"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@color/colorBule"
+                    android:layout_marginTop="15dp"
+                    android:text="提交" />
+            </LinearLayout>
+            <!-- 第二个标签要显示的内容 -->
+            <LinearLayout
+                android:id="@+id/LL_LUM_2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginTop="5dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/TV_LUM_2"
+                        android:layout_width="120dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="17dp"
+                        android:text="请输入用户ID："
+                        android:textColor="@color/colorBlack"
+                        android:inputType="number"
+                        />
+                    <EditText
+                        android:id="@+id/ET_LUM_1"
+                        android:layout_width="180dp"
+                        android:text=""
+                        android:layout_height="40dp"
+                        android:textSize="15dp"
+                        />
+                    <ImageView
+                        android:id="@+id/IV_LUM_1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/pic_search"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/TV_LUM_1"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/colorHighWhite"
+                    android:layout_width="300dp"
+                    android:layout_gravity="center"
+                    android:layout_height="350dp"
+                    />
+                <Button
+                    android:id="@+id/B_LUM_2"
+                    android:layout_width="300dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:visibility="gone"
+                    android:background="@color/colorBule"
+                    android:layout_marginTop="15dp"
+                    android:text="提交" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+</TabHost>

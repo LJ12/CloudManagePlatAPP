@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="学生出勤情况"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp"
+        android:background="@color/colorBule"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TV_SLA_1"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:inputType="number"
+            android:text="课程ID:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/TV_SLA_2"
+            android:layout_width="160dp"
+            android:layout_height="30dp"
+            android:text="课程名:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/TV_SLA_4"
+            android:layout_width="95dp"
+            android:layout_height="30dp"
+            android:text="课时:"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp"
+            />
+        <Spinner
+            android:id="@+id/S_SLA_1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="top"
+            >
+        </Spinner>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="5dp"
+        >
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:textColor="@color/colorBlack"
+            android:text="筛选:"
+            android:textSize="15dp"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            />
+        <RadioGroup
+            android:id="@+id/RG_SLA_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/RB_SLA_0"
+                android:layout_width="70dp"
+                android:checked="true"
+                android:layout_height="25dp"
+                android:text="全部"
+                android:textSize="13dp"
+                />
+
+            <RadioButton
+                android:id="@+id/RB_SLA_1"
+                android:layout_width="90dp"
+                android:layout_height="25dp"
+                android:text="准时出勤"
+                android:textSize="13dp"
+                />
+
+            <RadioButton
+                android:id="@+id/RB_SLA_2"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="迟到"
+                android:textSize="13dp"
+                />
+
+            <RadioButton
+                android:id="@+id/RB_SLA_3"
+                android:layout_width="70dp"
+                android:layout_height="25dp"
+                android:text="缺勤"
+                android:textSize="13dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/TV_SLA_3"
+        android:layout_width="300dp"
+        android:layout_height="350dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorHighWhite"
+        android:scrollbars="vertical"
+        android:textSize="13dp"
+        />
+
+    <Button
+        android:id="@+id/B_SLA_2"
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorBule"
+        android:text="返回上一级" />
+
+</LinearLayout>

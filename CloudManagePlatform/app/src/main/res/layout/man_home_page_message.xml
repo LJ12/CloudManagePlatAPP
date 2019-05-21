@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:text="教师管理:"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_1"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="录入教师信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_2"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="查看教师信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="修改教师信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="删除教师信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorHighWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="学生管理:"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_5"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="录入学生信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_6"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="查看学生信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_7"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="修改学生信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_8"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="删除学生信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorHighWhite" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:text="课程管理:"
+                android:textColor="@color/colorBlack"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_9"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="录入课程信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_10"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="查看课程信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_11"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="修改课程信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="360dp"
+                android:layout_height="5dp"
+                android:layout_marginLeft="30dp"
+                android:background="@color/colorHighWhite" />
+
+            <LinearLayout
+                android:id="@+id/LL_MHPM_12"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="290dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="25dp"
+                    android:gravity="center_vertical"
+                    android:text="删除课程信息"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="13dp" />
+
+                <ImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/pic5" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorHighWhite" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

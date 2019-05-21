@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBule"
+        android:gravity="center"
+        android:text="更改学生考勤记录"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp" />
+    <LinearLayout
+        android:layout_width="280dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:text="请输入学生ID"
+            android:textSize="17dp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/ET_CAS_1"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:hint=""
+            android:textColor="@color/colorBlack"
+            android:inputType="number"
+            android:textSize="15dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="100dp"
+            android:text="请输入课程ID"
+            android:textSize="17dp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <EditText
+            android:id="@+id/ET_CAS_2"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="15dp"
+            android:hint=""
+            android:inputType="number"
+            android:textColor="@color/colorBlack"
+            android:textSize="15dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/B_CAS_1"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="5dp"
+                android:background="@color/colorBule"
+                android:text="提交" />
+
+            <Button
+                android:id="@+id/B_CAS_2"
+                android:layout_width="100dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="50dp"
+                android:background="@color/colorBule"
+                android:text="取消" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lijing.cloudmanageplatform">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".StudentActivity.Stu_Home_Page" />
+        <activity android:name=".zxing.android.PreferencesActivity"/>
+        <activity android:name=".StudentActivity.Stu_Sign_Activity"/>
+        <activity android:name=".TeacherActivity.Tea_Create_QRcode"/>
+        <activity android:name=".ChangeEmil"/>
+        <activity android:name=".ChangePassword"/>
+        <activity android:name=".InsertCourse"/>
+        <activity android:name=".InsertUser"/>
+        <activity android:name=".ManageActivity.Man_Home_Page"/>
+        <activity android:name=".ManageActivity.Man_Insert_Course"/>
+        <activity android:name=".ManageActivity.Man_Look_User"/>
+        <activity android:name=".Look_Course"/>
+        <activity android:name=".UserDeleteCourse"/>
+        <activity android:name=".StudentActivity.Stu_Attendance"/>
+        <activity android:name=".StudentActivity.Stu_Attendance_Show_Result"/>
+        <activity android:name=".TeacherActivity.Tea_Home_Page"/>
+        <activity android:name=".TeacherActivity.Tea_Creat"/>
+        <activity android:name=".TeacherActivity.Tea_Get_Params"/>
+        <activity android:name=".LosePassword"/>
+        <activity android:name=".ManageActivity.Change_Attendence_1"/>
+        <activity android:name=".ManageActivity.Change_Attendence_2"/>
+        <activity android:name=".TeacherActivity.History_QRcode"/>
+        <activity android:name=".ManageActivity.ChangeUserMessage"/>
+        <activity android:name=".ManageActivity.Man_Look_Course"/>
+        <activity android:name=".ManageActivity.ChangeCourseMessage"/>
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+</manifest>

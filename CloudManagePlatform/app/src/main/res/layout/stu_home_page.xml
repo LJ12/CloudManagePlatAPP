@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorBule"
+        android:gravity="center"
+        android:text="欢迎来到考勤管理系统"
+        android:textColor="@color/colorBlack"
+        android:textSize="18dp" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/TV_H_name"
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:textSize="15dp"
+            android:textColor="@color/colorBlack"
+            />
+
+        <Button
+            android:id="@+id/B_H1"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="80dp"
+            android:background="@color/colorHighWhite"
+            android:gravity="center"
+            android:text="注销"
+            android:textColor="@color/colorBlack"
+            android:textSize="9dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@color/colorHighWhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="73dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:scrollbars="vertical"
+            >
+            <TextView
+                android:id="@+id/TV_H1"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="个人信息"
+                android:textColor="@color/text_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/TV_H1_2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="更改密码"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/TV_H1_3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:textColor="@color/colorBlack"
+                android:gravity="center"
+                android:text="更改邮箱"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorHighWhite" />
+
+            <TextView
+                android:id="@+id/TV_H2"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="课程管理"
+                android:textColor="@color/text_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/TV_H2_1"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:textColor="@color/colorBlack"
+                android:text="录入课程"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/TV_H2_2"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="查看课表"
+                android:textColor="@color/colorBlack"
+                android:textSize="10dp"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_marginTop="5dp"
+                android:id="@+id/TV_H2_3"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center"
+                android:text="删除课程"
+                android:textSize="10dp"
+                android:textColor="@color/colorBlack"
+                android:visibility="gone" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorHighWhite" />
+
+            <TextView
+                android:id="@+id/TV_H3"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="签到"
+                android:textColor="@color/text_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorHighWhite" />
+
+            <TextView
+                android:id="@+id/TV_H4"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="出勤情况"
+                android:textColor="@color/text_color"
+                android:textSize="12dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/colorHighWhite" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="5dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorHighWhite"/>
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/PC_H1"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                </com.github.mikephil.charting.charts.PieChart>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="20dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TV_H_data1"
+                        android:layout_width="110dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorHighWhite"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorBlack"
+                        android:text="应出勤课程数目："
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/TV_H_data2"
+                        android:layout_width="110dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorHighWhite"
+                        android:gravity="center_vertical"
+                        android:text="已出勤课程数目："
+                        android:textColor="@color/colorBlack"
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp">
+
+                <com.github.mikephil.charting.charts.PieChart
+                    android:id="@+id/PC_H2"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp">
+
+                </com.github.mikephil.charting.charts.PieChart>
+
+                <LinearLayout
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="25dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/TV_H_data3"
+                        android:textColor="@color/colorBlack"
+                        android:layout_width="110dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/colorHighWhite"
+                        android:gravity="center_vertical"
+                        android:text="已出勤课程数目："
+                        android:textSize="10dp" />
+
+                    <TextView
+                        android:id="@+id/TV_H_data4"
+                        android:layout_width="110dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@color/colorHighWhite"
+                        android:gravity="center_vertical"
+                        android:textColor="@color/colorBlack"
+                        android:text="迟到的课程数目："
+                        android:textSize="10dp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<root>
+    <item
+        name='android.location.LocationManager void requestLocationUpdates(java.lang.String, long, float, android.location.LocationListener)'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
